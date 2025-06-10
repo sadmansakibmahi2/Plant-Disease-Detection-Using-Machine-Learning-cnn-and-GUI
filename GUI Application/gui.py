@@ -11,7 +11,7 @@ DIS_json = open("dis.json", encoding="utf-8")
 dis_DB_cure = json.loads(DIS_json.read())
 
 # Function to load and preprocess an image
-def load_and_preprocess_image(image_path, target_size=(600, 600)):
+def load_and_preprocess_image(image_path, target_size=(300, 300)):
     img = Image.open(image_path)
     img = img.resize(target_size)
     img_array = np.array(img, dtype=np.float32) / 255.0
