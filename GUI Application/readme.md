@@ -42,12 +42,7 @@ This will launch the app in your default web browser (usually at `http://localho
 
 If you want to test with a simple app, paste this into `app.py`:
 
-```python
-import streamlit as st
 
-st.title("Hello Streamlit!")
-st.write("This is a simple Streamlit app.")
-```
 
 Then run it using:
 
