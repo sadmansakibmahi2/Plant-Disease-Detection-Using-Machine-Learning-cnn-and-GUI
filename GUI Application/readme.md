@@ -31,7 +31,7 @@ This runs a sample app in your browser. If it works, you're good to go.
 Navigate to the directory where your `app.py` file is located. Then run:
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 This will launch the app in your default web browser (usually at `http://localhost:8501`).
@@ -47,7 +47,7 @@ If you want to test with a simple app, paste this into `app.py`:
 Then run it using:
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 ---
