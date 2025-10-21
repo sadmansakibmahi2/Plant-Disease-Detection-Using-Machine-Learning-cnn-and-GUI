@@ -1,4 +1,4 @@
-# Plant-Disease-Detection-Using-Machine-Learning-EfficientNetB3-,GUI and web app
+# Plant-Disease-Detection-Using-Machine-Learning-EfficientNetB3- GUI and web app
 
 In this project we aim to classify plant diseases using machine learining
 
@@ -55,7 +55,6 @@ The entire process is designed to be simple and automated:
 
 
 ---
-🎥 [Watch the demo video here](https://github.com/sadmansakibmahi2/Plant-Disease-Detection-Using-Machine-Learning-EfficientNetB3-and-GUI/blob/main/app.mp4)
 
 ### Key Technologies Used
 
