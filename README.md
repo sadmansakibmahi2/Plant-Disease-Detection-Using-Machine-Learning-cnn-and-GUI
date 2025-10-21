@@ -5,6 +5,10 @@ In this project we aim to classify plant diseases using machine learining
 Its main goal is to let a user upload an image of a plant leaf, and the application will automatically identify if the leaf is healthy or has a specific disease, and then provide information on how to treat it.
 
 
+https://github.com/user-attachments/assets/f5ab4782-927e-4378-9142-e9dea6fa250b
+
+
+
 ### 🌿 List of Detectable Diseases
 
 The model is trained to classify 14 different conditions across Pepper, Potato, and Tomato plants:
