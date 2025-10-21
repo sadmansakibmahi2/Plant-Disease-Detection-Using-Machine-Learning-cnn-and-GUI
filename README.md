@@ -51,6 +51,7 @@ The entire process is designed to be simple and automated:
 
 
 ---
+🎥 [Watch the demo video here](https://github.com/sadmansakibmahi2/Plant-Disease-Detection-Using-Machine-Learning-EfficientNetB3-and-GUI/blob/main/app.mp4)
 
 ### Key Technologies Used
 
