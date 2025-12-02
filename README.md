@@ -1,6 +1,3 @@
-Here is a rewritten, polished, professional project description **in the same style and structure as your example**, but specifically tailored for your **Plantify – Plant Disease Detection Using Machine Learning (CNN + Streamlit)** system:
-
----
 
 # 🌱 Plant-Disease-Detection-Using-Machine-Learning-CNN and Web App
 
