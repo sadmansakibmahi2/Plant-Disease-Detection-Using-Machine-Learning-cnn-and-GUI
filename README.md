@@ -1,64 +1,195 @@
-# Plant-Disease-Detection-Using-Machine-Learning-EfficientNetB3- GUI and web app
-
-In this project we aim to classify plant diseases using machine learining
-
-Its main goal is to let a user upload an image of a plant leaf, and the application will automatically identify if the leaf is healthy or has a specific disease, and then provide information on how to treat it.
-
-
-https://github.com/user-attachments/assets/f5ab4782-927e-4378-9142-e9dea6fa250b
-
-
-
-### 🌿 List of Detectable Diseases
-
-The model is trained to classify 14 different conditions across Pepper, Potato, and Tomato plants:
-
-1.  Pepper bell Bacterial spot
-2.  Pepper bell healthy
-3.  Potato Early blight
-4.  Potato Late blight
-5.  Potato healthy
-6.  Tomato Early blight
-7.  Tomato Late blight
-8.  Tomato Leaf Mold
-9.  Tomato Septoria leaf spot
-10. Tomato Spider mites Two spotted spider mite
-11. Tomato Target Spot
-12. Tomato Tomato mosaic virus
-13. Tomato healthy
-14. potato hollow heart
+Here is a rewritten, polished, professional project description **in the same style and structure as your example**, but specifically tailored for your **Plantify – Plant Disease Detection Using Machine Learning (CNN + Streamlit)** system:
 
 ---
+
+# 🌱 Plant-Disease-Detection-Using-Machine-Learning-CNN and Web App
+
+In this project, we aim to accurately **classify plant diseases using Machine Learning and Convolutional Neural Networks (CNNs)**.
+The system uses a trained deep learning model (`plantify_model.keras`) to recognize multiple plant leaf diseases from an uploaded image.
+
+The main goal of this project is simple but powerful:
+➡️ **Allow a user to upload an image of a plant leaf and automatically detect whether the leaf is healthy or infected with a specific disease, and optionally provide treatment suggestions.**
+
+This tool can assist farmers, students, researchers, and agricultural workers in making faster and more informed decisions—preventing crop losses and improving yield quality.
+
+---
+
+# 🌿 **List of Detectable Diseases**
+
+The model is trained to classify **59 different plant conditions** across a wide variety of crops, including Apple, Rice, Corn, Grape, Tomato, Pepper, Potato, Tea, Orange, Strawberry, Soybean, and more.
+
+Below is the full list of detectable plant conditions as defined in your class labels:
+
+1. Apple Apple scab
+2. Apple Black rot
+3. Apple Cedar apple rust
+4. Apple healthy
+5. Bacterial leaf blight in rice leaf
+6. Blight in corn Leaf
+7. Blueberry healthy
+8. Brown spot in rice leaf
+9. Cercospora leaf spot
+10. Cherry Powdery mildew
+11. Cherry healthy
+12. Common Rust in corn Leaf
+13. Corn (maize) healthy
+14. Garlic
+15. Grape Black rot
+16. Grape Esca Black Measles
+17. Grape Leaf blight (Isariopsis)
+18. Grape healthy
+19. Gray Leaf Spot in corn leaf
+20. Leaf smut in rice leaf
+21. Nitrogen deficiency in plant
+22. Orange Haunglongbing (Citrus greening)
+23. Peach healthy
+24. Pepper bell Bacterial spot
+25. Pepper bell healthy
+26. Potato Early blight
+27. Potato Late blight
+28. Potato healthy
+29. Raspberry healthy
+30. Sogatella rice
+31. Soybean healthy
+32. Strawberry Leaf scorch
+33. Strawberry healthy
+34. Tomato Bacterial spot
+35. Tomato Early blight
+36. Tomato Late blight
+37. Tomato Leaf Mold
+38. Tomato Septoria leaf spot
+39. Tomato Spider mites (Two-spotted spider mite)
+40. Tomato Target Spot
+41. Tomato Mosaic virus
+42. Tomato healthy
+43. Waterlogging in plant
+44. Algal leaf in tea
+45. Anthracnose in tea
+46. Bird eye spot in tea
+47. Brown blight in tea
+48. Cabbage looper
+49. Corn crop
+50. Ginger
+51. Healthy tea leaf
+52. Lemon canker
+53. Onion
+54. Potassium deficiency in plant
+55. Potato crop
+56. Potato hollow heart
+57. Red leaf spot in tea
+58. Tomato canker
+59. Healthy plant (general class if included by your model)
+
+---
+
 
 ### ⚙️ Library Requirements
 
-To run this project, you need to have the following Python libraries installed. You can install them using a `requirements.txt` file and the command `pip install -r requirements.txt`.
+To run this project, ensure you have the following Python libraries installed.
+You can install everything using:
 
-* **streamlit**: For creating and running the web application.
-* **tensorflow**: The core machine learning framework. `tensorflow-cpu` is also a valid option if you don't have a dedicated GPU.
-* **numpy**: For numerical operations, especially for handling the image array.
-* **Pillow**: A fork of PIL (Python Imaging Library) used for opening, manipulating, and saving images.
+```
+pip install -r requirements.txt
+```
 
-### How It Works
+**Required Libraries**
 
-The entire process is designed to be simple and automated:
-
-1.  **📤 Image Upload**: You start by uploading an image (`.jpg`, `.png`, etc.) of a plant leaf using the web interface.
-
-2.  **🧠 Model Prediction**: The application uses a powerful and efficient machine learning model called **EfficientNetB3** (optimized with TensorFlow Lite). This model analyzes the image and predicts which of the 14 possible conditions it has, such as 'Potato Late blight' or 'Tomato healthy'.
-
-3.  **✅ Results and Cure**: The application then displays the results:
-    * The **name of the disease** detected.
-    * The **confidence level** of the prediction (e.g., 98.5% sure).
-    * **Cure information** and treatment suggestions, which it pulls from a local JSON database file.
-
-
+* **streamlit** – For building and running the interactive web app
+* **tensorflow / keras** – For loading and running the plant disease classification model
+* **numpy** – For numerical operations and image array handling
+* **Pillow (PIL)** – For opening and resizing uploaded images
 
 ---
 
-### Key Technologies Used
+### ⚙️ How It Works
 
-* **Streamlit**: A Python library used to quickly build and deploy the user-friendly web interface (the GUI).
-* **TensorFlow Lite**: A lightweight version of Google's TensorFlow framework. It's used here to run the pre-trained `EfficientNetB3` model efficiently and quickly.
-* **Pillow (PIL)** & **NumPy**: These libraries are used for image processing—opening the uploaded file, resizing it, and converting it into the right format for the model.
-* **JSON**: A simple file format used to store the database of disease names and their corresponding cures.
+The workflow of the project is optimized to be smooth, simple, and intuitive:
+
+#### 1. 📤 Image Upload
+
+The user uploads a plant leaf image (`.jpg`, `.jpeg`, `.png`, etc.) through the Streamlit interface.
+
+#### 2. 🧠 Model Prediction
+
+The backend uses a **CNN-based Keras model** (`plantify_model.keras`) to analyze the leaf image.
+The image is preprocessed, resized to `150x150`, normalized, and passed through the neural network.
+
+The model then predicts which of the 14 disease categories the leaf belongs to.
+
+#### 3. 📊 Results Display
+
+The app shows:
+
+* The **predicted disease name**
+* The **confidence percentage**
+* The **uploaded leaf image** for confirmation
+
+#### 4. 💡 Cure or Guidance (Optional Feature)
+
+If you connect a JSON treatment database, the system can also provide:
+
+* Cure information
+* Prevention steps
+* Additional notes
+
+---
+
+### 🛠️ Key Technologies Used
+
+* **Streamlit** – For building a clean, fast, and interactive graphical web app
+* **TensorFlow / Keras** – For loading and running the trained CNN model
+* **NumPy** – For array manipulation and model input preparation
+* **Pillow (PIL)** – For reading and resizing the images
+* **JSON (Optional)** – For linking disease names to cure information
+
+---
+
+### ▶️ How to Run the Web App
+
+1. Install the required libraries:
+
+```
+pip install -r requirements.txt
+```
+
+2. Place the following files in the project directory:
+
+* `app.py` (your Streamlit app)
+* `plantify_model.keras` (the trained model)
+* `class_names.py` or JSON file containing class label names
+
+3. Run the Streamlit server:
+
+```
+python -m streamlit run app.py
+```
+
+4. Your browser will automatically open the web interface.
+
+---
+
+### 🌍 Impact & Use Cases
+
+Plant diseases cause billions of dollars in crop losses each year.
+This system provides an efficient, low-cost, AI-powered solution with real-world benefits:
+
+#### 🌾 For Farmers
+
+Early detection minimizes crop loss and improves productivity.
+
+#### 🎓 For Students & Researchers
+
+Useful for agriculture research, ML experiments, and academic projects.
+
+#### 🧪 For Developers
+
+A practical example of CNN image classification integrated into a real web app.
+
+#### 🌍 For Communities
+
+Can be deployed in low-resource regions to support local growers and agricultural workers.
+
+---
+
+
+Just tell me!
