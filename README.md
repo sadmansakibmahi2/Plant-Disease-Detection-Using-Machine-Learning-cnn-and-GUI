@@ -4,6 +4,14 @@
 In this project, we aim to accurately **classify plant diseases using Machine Learning and Convolutional Neural Networks (CNNs)**.
 The system uses a trained deep learning model (`plantify_model.keras`) to recognize multiple plant leaf diseases from an uploaded image.
 
+##  App Demo
+
+
+
+https://github.com/user-attachments/assets/7702983c-4c49-42e8-a6a1-edde2e64505a
+
+
+
 
 Model Development Code: https://www.kaggle.com/code/sadmansakibmahi/acc-99-36-novel-cnn-model-for-plant-disease-clf
 
